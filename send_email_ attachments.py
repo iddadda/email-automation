@@ -34,8 +34,6 @@ def send_email ():
         Regards,<br>
         dadda
         """ 
-        
-
     
     # 이메일 메시지 구성
     msg = MIMEMultipart()
@@ -43,7 +41,6 @@ def send_email ():
     msg['To'] = recipient_email  
     msg['Subject'] = subject  
     msg.attach(MIMEText(body, 'html'))
-    
     
     # 이미지 경로
     img_path = "/Users/ida/til/til_python/img/003.jpeg"
